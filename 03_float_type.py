@@ -52,3 +52,4 @@ print("Minimum:", sys.float_info.min)
 
 print(1e308)
 print(1e309)  # próbáld ki!
+
