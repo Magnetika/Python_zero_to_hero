@@ -4,5 +4,11 @@ if grade == 1:
     print("You are in first grade")
 elif grade == 2:
     print("You are in second grade")
+elif grade == 3:
+    print("You are in third grade")
+elif grade == 4:
+    print("You are in fourth grade")
+elif grade == 5:
+    print("You are in fifth grade")
 else:
     print("You are in another grade")
