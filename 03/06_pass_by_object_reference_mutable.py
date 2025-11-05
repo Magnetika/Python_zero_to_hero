@@ -13,3 +13,9 @@ print("Modified Yearly Salary List:", yearly_salary_list_copy)
 print("Original Yearly Salary List after modification:", yearly_salary_list)
 # This code demonstrates how mutable objects (like lists) are passed by reference in Python.
 
+print('yearly_salary_list memory adress', id(yearly_salary_list))
+print('yearly_salary_list_copy memory adress', id(yearly_salary_list_copy))
+
+yearly_salary_list.append(80000)
+print('After appending a new salary to yearly_salary_list:')
+print('yearly_salary_list:', yearly_salary_list)
