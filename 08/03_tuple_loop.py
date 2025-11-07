@@ -5,3 +5,6 @@ for i in yearly_salary:
 
 for i in range(len(yearly_salary)):
     print(f"index {i}, value:{yearly_salary[i]}")
+
+for i, v in enumerate(yearly_salary):
+    print(f"index {i}, value:{v}")
