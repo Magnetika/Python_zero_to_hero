@@ -1,0 +1,3 @@
+Hello from Python file handling!
+This is the second line.
+Appended line at the end.
