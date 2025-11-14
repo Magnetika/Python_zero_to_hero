@@ -1,1 +1,0 @@
-This is an example file created for shutil demonstration.
