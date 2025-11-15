@@ -7,10 +7,11 @@ PATH = path.join(path.dirname(__file__), 'database', 'books.csv')
 books = file_handler.read_file(PATH)
 
 def list_books():
-    pass
+    print(books)
 
 def find_book():
-    pass
+    id = int(input("Enter book ID to find: "))
+    print(crud_operations.find_item(books, id))
 
 def update_book():
     pass

@@ -1,17 +1,18 @@
 def read_file(filepath):
     with open(filepath, 'r') as file:
-        users = []
+        books = []
         for line in file:
             id, title, author = line.rstrip().split(',')
-            users.append({
+            books.append({
                 'id': int(id),
                 'title': title,
                 'author': author,
             })
-        return users
+        return books
     
-def append_user(filepath, user):
-    with open(filepath, 'a') as file:
-        user_line = '\n' + ';'.join(str(val) for val in user.values())
-        file.write(user_line)
+def write_file(filepath, books):
+    with open(filepath, 'w') as file:
+       for book in books:
+        row = ';'.join(str(val) for val in book.values()) + '\n'
+        file.write(row)
 
